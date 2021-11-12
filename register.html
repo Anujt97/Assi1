@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel='stylesheet' href='register.css' />
+    <title>
+        Registration page
+    </title>
+</head>
+
+<body>
+
+    <form>
+        <label>First Name : </label>
+        <input type='text' id='f_name' /><br>
+        <label>Last Name : </label>
+        <input type='text' id='l_name' /><br>
+        <label>Email : </label>
+        <input type='text' id='email' pattern='.+@.+\..+' title="enter valid email format" required /><br>
+        <label>Password :</label>
+        <input type='password' id='pass' pattern='(?=.*[A-Z])(?=.*[a-z])(?=.*\d).{8,}'
+            title='Must contain one uppercase and lowercase latter and one number and atleast 8 or more character'
+            required /><br>
+        <label>Degree :</label>
+        <select>
+            <option>BE</option>
+            <option>ME</option>
+            <option>BSc</option>
+            <option>MBA</option>
+        </select><br>
+        <label>Field :</label>
+        <select>
+            <option>IT</option>
+            <option>Comp</option>
+            <option>Mech</option>
+            <option>Civil</option>
+        </select><br>
+        <label>Interested Technologies</label>
+        <select>
+            <option>Python</option>
+            <option>Java</option>
+            <option>Web Development</option>
+            <option>Machine Learning</option>
+        </select><br>
+        <h4>Please enter your Project Details and showcase your experience</h4>
+        <textarea placeholder="showcase yourself in maximum 200 words"></textarea><br>
+
+        <button type='submit'>Register</button>
+
+
+    </form>
+
+</body>
+
+</html>
